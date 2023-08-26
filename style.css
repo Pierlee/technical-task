@@ -40,6 +40,38 @@
   margin: 3px 0;
   transition: transform 0.3s ease;
 }
+
+.hero {
+  background-image: url('./images/kreato.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Style for the hero content */
+.hero-content {
+  max-width: 800px;
+  margin-top: 10rem;
+}
+
+/* Style for the call-to-action button */
+.cta-button {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 20px 80px;
+  margin: 3rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: darkblue;
+}
+
 @media (max-width: 768px){
   .menu-icon{
     display: block;
