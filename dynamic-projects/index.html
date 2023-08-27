@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dynamic Projects</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Dynamic Projects</h1>
+  </header>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      {% for project in site.data.projects %}
+        <li>
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          <a href="{{ project.repository }}" target="_blank">GitHub Repository</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Dynamic Projects</p>
+  </footer>
+</body>
+</html>
+2 1 765 
