@@ -138,7 +138,7 @@
     justify-content: center;
   }
   .project-information{
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 15px;
   }
   .project-buttons{
@@ -237,5 +237,11 @@
   }
   .projects ul{
     width: 100%;
+  }
+  .me-container{
+    flex-direction: column;
+  }
+  .project-buttons a{
+    width: 50px;
   }
 }
