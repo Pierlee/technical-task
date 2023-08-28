@@ -110,7 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showImageButtons.forEach((button, index) => {
     button.addEventListener("click", function () {
-      projectImages[index].classList.toggle("show");
+      if (projectImages[index].classList.contains("show")) {
+        projectImages[index].classList.remove("show");
+        button.textContent = "Show Image";
+      } else {
+        projectImages[index].classList.add("show");
+        button.textContent = "Hide Image";
+      }
     });
   });
 });
