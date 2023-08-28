@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/liquidjs@7/dist/liquid.min.js"></script>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="./images/Ativo 81VERSÃO PNG.png" alt=""></div>
+    <div class="menu-icon" id="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="./">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="about">
+    <div class="me-container">
+      <div class="my-image">
+        <img src="./images/me.png" alt="">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p class="expanded">Here you'll find some projects that I've worked on. Some projects I used HTML, JS and CSS exclusively and some other projects I used React.</p>
+        <p class="collapsed" style="display: none;">I am a passionate web developer with a love for creating interactive and user-friendly websites. I got into technology out of curiosity. I became a self-taught web developer studying HTML5, CSS3, and JavaScript. After a couple of years studying on my own, I felt I wanted to dive deeper in the area so I started taking the Systems Analysis and Development course. I'm always looking to expand my knowledge. I'm am also taking a React from Zero to Pro course.</p>
+        <button id="expand-button">Read More...</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects-list"> 
+    <ul>
+      {% for project in projects %}
+      <li class="project">
+        <img src="{{ project.image }}" alt="{{ project.name }} Image">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description | truncatewords: 20 }}</p>
+        <a href="{{ project.repository }}" target="_blank">GitHub Repository</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  
+
+  <script src="./index.js"></script>
+</body>
+</html>

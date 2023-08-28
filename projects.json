@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Grocery cart",
+    "description": "Using html, css and js exclusively, I created a grocery cart where I can write down the name of the grocery items and the quantity I want to buy. I used setItem and getItem to add the items into the local storage so if you refresh the page all of the items that you have already created are still there.",
+    "image": "images/grocery-cart.png",
+    "repository": "https://github.com/Pierlee/Grocery-Cart"
+  },
+  {
+    "name": "Organo",
+    "description": "I used react to create a webapp using ReactJS where I can add team members and the different areas they work in.",
+    "image": "images/organo.png",
+    "repository": "https://github.com/Pierlee/Organo"
+  },
+  {
+    "name": "SunnySide",
+    "description": "Using html, css and js exclusively, I created a website using the assets from frontend mentor. I used CSS and HTML and a lot of FlexBox to create a responsive website.",
+    "image": "images/sunnyside.png",
+    "repository": "https://github.com/Pierlee/SunnySide"
+  },
+  {
+    "name": "Results Summary Component",
+    "description": "I used react to create a component that would show the scores of each of your abilities and create an average for all scores",
+    "image": "images/summary-component.png",
+    "repository": "https://github.com/Pierlee/results-summary-component"
+  },
+  {
+    "name": "Calculadora",
+    "description": "Using html, css and js exclusively, I created a cool responsive caclulator that simulates a tablet and a cellphone",
+    "image": "images/calculadora.png",
+    "repository": "https://github.com/Pierlee/Calculadora"
+  }
+]
